@@ -36,7 +36,7 @@ export class BankListComponent implements OnInit {
     })
   }
 
-  displayedColumns = ['Id', 'ClientId', 'AccountType', 'CurrencyType', 'ExpoId', 'Balance', 'Actions']
+  displayedColumns = ['Id', 'ClientId', 'AccountType', 'CurrencyType', 'ExpoId', 'Balance']
 
   get dataSource() {
     return new MatTableDataSource(this.banks || [])

@@ -36,7 +36,7 @@ export class ExpoListComponent implements OnInit {
     })
   }
 
-  displayedColumns = ['Id', 'RegistrationNumber', 'City', 'Address', 'Actions']
+  displayedColumns = ['Id', 'RegistrationNumber', 'City', 'Address']
 
   get dataSource() {
     return new MatTableDataSource(this.expos || [])

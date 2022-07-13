@@ -36,7 +36,7 @@ export class ClientListComponent implements OnInit {
     })
   }
 
-  displayedColumns = ['Id', 'BankAccountId', 'JMBG', 'FirstName', 'LastName', 'ParentName', 'Address', 'PhoneNumber', 'Actions']
+  displayedColumns = ['Id', 'BankAccountId', 'JMBG', 'FirstName', 'LastName', 'ParentName', 'Address', 'PhoneNumber']
 
   get dataSource() {
     return new MatTableDataSource(this.clients || [])

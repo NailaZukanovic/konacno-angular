@@ -1,0 +1,38 @@
+
+
+<h1>Prebaci novac sa racuna:</h1>
+
+
+<div> 
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)" > 
+       <input type= "number"  name="fromAccount" placeholder="From Account" 
+          formControlName = "fromAccount"> 
+       <br/>
+       <input type= "number"  name="toAccount" placeholder="To Account" 
+       formControlName = "toAccount">
+       <br/>
+       <input type="number" name="Ammount" placeholder="Ammount" formControlName="Ammount" />
+       <input type="submit"  value="Click here"> 
+    </form>
+ </div> 
+ <p> Textbox result is</p>
+ <div *ngFor="let item of array">
+    <button 
+    (click)="enableDisableRule()" 
+    [ngClass]="{'green' : toggle, 'red': !toggle}">
+    {{status}}
+</button>
+    <div>From account:{{item.fromAccount}}     <button 
+        (click)="blokiraj()" 
+        [ngClass]="{'green' : toggle2, 'red': !toggle2}">
+        {{status2}}
+    </button></div>
+    <div>To account:{{item.toAccount}}     <button 
+        (click)="blokiraj()" 
+        [ngClass]="{'green' : toggle2, 'red': !toggle2}">
+        {{status2}}
+    </button></div>
+
+    <div>Ammount: {{item.Ammount}}</div>
+    <br>
+ </div>

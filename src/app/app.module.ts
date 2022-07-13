@@ -18,6 +18,7 @@ import { ExpoFormComponent } from './components/expo/expo-form/expo-form.compone
 import { WorkerFormComponent } from './components/worker/worker-form/worker-form.component';
 import { FormComponent } from './components/utils/form/form.component';
 import { SpinnerComponent } from './components/utils/spinner/spinner.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SpinnerComponent } from './components/utils/spinner/spinner.component';
     ExpoFormComponent,
     WorkerFormComponent,
     FormComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    TransactionsComponent
   ],
   imports: [
     BrowserModule,

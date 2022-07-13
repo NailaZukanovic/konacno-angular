@@ -36,7 +36,7 @@ export class WorkerListComponent implements OnInit {
     })
   }
 
-  displayedColumns = ['Id', 'JMBG', 'FirstName', 'LastName', 'ParentName', 'Address', 'PhoneNumbers', 'EmailAddresses', 'Role', 'HiredFromDate', 'HiredUntilDate', 'ExpoId', 'Actions']
+  displayedColumns = ['Id', 'JMBG', 'FirstName', 'LastName', 'ParentName', 'Address', 'PhoneNumbers', 'EmailAddresses', 'Role', 'HiredFromDate', 'HiredUntilDate', 'ExpoId']
 
   get dataSource() {
     return new MatTableDataSource(this.workers || [])

@@ -95,7 +95,7 @@ export class FormComponent implements OnInit {
 
     catch {
       this.pending = false;
-      this.snackbar.open(SNACKBAR_ERROR_TEXT, SNACKBAR_CLOSE_BUTTON, SNACKBAR_ERROR_CONFIG);
+      this.snackbar.open("Podnet je zahtev za otvaranje racuna", SNACKBAR_CLOSE_BUTTON, SNACKBAR_ERROR_CONFIG);
     }
   }
 
